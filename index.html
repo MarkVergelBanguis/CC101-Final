@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="/Logo.png" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="/dist/photoswipe.css"> 
+    <link rel="stylesheet" href="/dist/default-skin/default-skin.css"> 
+
+
+    <title>Bench</title>
+  </head>
+
+  <body>
+   <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+
+<div class="container fluid">
+    <div class="row text-center p-3 bg-white shadow mt-3">
+        <div class="col-12 "><h1 class="text-danger bench">Bench/</h1></div>
+    </div>
+
+    <div class="row row-cols-md-3  text-center align-middle bench-category pt-3 parent">
+        <div class="col-4 col-6 col-sm-4 col-md-4 col-lg-4  cute"><a href="/index.html">Products</a></div>
+        <div class="col-4 col-6 col-sm-4 col-md-4 col-lg-4 order-sm-12 cute"><a href="#" class="aboutButton">About</a>    
+    </div>
+
+        <div class="col-12 col-sm-4 col-lg-4 dropdown align-middle cute-1">
+            <a class="btn dropdown-toggle bench-dropdown cuteness" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Categories
+            </a>  
+                <div class="dropdown-menu text-center align-middle p-4" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item cuteness" href="#" value="1">T-Shirt</a>
+                    <a class="dropdown-item cuteness" href="#" value="2">Perfume</a>
+                    <a class="dropdown-item cuteness" href="#" value="3">Jeans</a>
+                    <a class="dropdown-item cuteness" href="#" value="4">Wax</a>
+                    <a class="dropdown-item cuteness" href="#" value="5">Underwear</a>
+                </div>
+        </div>
+    </div>
+
+        <div class="row row-cols-2 row-cols-sm-3 row-cols-md-5 pt-5 my-gallery" id="galleryPictures">
+
+        </div>
+
+
+
+        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+            <!-- Background of PhotoSwipe. 
+                 It's a separate element as animating opacity is faster than rgba(). -->
+            <div class="pswp__bg"></div>
+        
+            <!-- Slides wrapper with overflow:hidden. -->
+            <div class="pswp__scroll-wrap">
+        
+                <!-- Container that holds slides. 
+                    PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                    Don't modify these 3 pswp__item elements, data is added later on. -->
+                <div class="pswp__container">
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                </div>
+        
+                <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+                <div class="pswp__ui pswp__ui--hidden">
+        
+                    <div class="pswp__top-bar">
+        
+                        <!--  Controls are self-explanatory. Order can be changed. -->
+        
+                        <div class="pswp__counter"></div>
+        
+                        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                        <button class="pswp__button pswp__button--share" title="Share"></button>
+                        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+        
+                        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+        
+                        <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                        <!-- element will get class pswp__preloader--active when preloader is running -->
+                        <div class="pswp__preloader">
+                            <div class="pswp__preloader__icn">
+                              <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                        <div class="pswp__share-tooltip"></div> 
+                    </div>
+        
+                    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                    </button>
+        
+                    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                    </button>
+        
+                    <div class="pswp__caption">
+                        <div class="pswp__caption__center"></div>
+                    </div>
+        
+                </div>
+        
+            </div>
+        
+        </div>
+
+        <div class="jumbotron shadow mt-5 about jello-horizontal" id="about">
+            <h1 class="display-4 pb-3" >Bench/ </h1>
+            <p>Located in: Metro Surigao Shoping Center Inc.
+            </p>
+            <p class="lead">Address: Metro Surigao Mall, Rizal Street, Surigao City, Surigao Del Norte</p>
+            <hr class="my-4">
+            <p class="lead">Vision</p>
+            <p>To be a recognized world brand among the best world brands</p>
+            <p class="lead">Mission</p>
+            <p>When we create, we inspire.
+                When we make, we innovate.
+                When we lead, we serve. </p>
+
+             <div class="m"> <p class="lead">About Bench</p>
+                <p>BENCH/ began in 1987 as a small store selling men’s t-shirts. Then, it grew at an unparalleled rate becoming the pioneer in the use of celebrity endorsers, television, and giant billboards to propel a fashion brand that offers premium quality products at affordable prices.
+
+                    From being the number one store of men’s apparel, BENCH/ has grown to include a ladies’ line, underwear, fragrances, housewares, snacks, and a wide array of other lifestyle products. Throughout the years, BENCH/ has achieved the distinction of being present virtually in every retail space in the Philippines, and has built a worldwide network of stores and outlets, reaching as far as the United States, the Middle East, and China.
+                    
+                    As it sliced through demographic divisions -- age, gender, socio-economic status -- a stirring slogan, “BENCH/ is forever”, became the company’s abiding creed.</p></div>   
+        </div>
+</div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="/dist/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<!-- Core JS file -->
+<script src="/dist/photoswipe.min.js"></script> 
+
+<!-- UI JS file -->
+<script src="/dist/photoswipe-ui-default.min.js"></script> 
+<script src="/lightbox.js"></script>
+<script src="/images.js"></script>
+
+</body>
+</html>
