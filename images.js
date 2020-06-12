@@ -24,13 +24,15 @@ function showAbout() {
 aboutPage.style.display = 'block';
 gallery.style.display = 'none';
 }
-
-
-function currentPage(page,length) {
+function randomInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+function currentPage(page,length, min, max) {
     let current = document.querySelector('#dropdownMenuLink');
     current.textContent = page;
     gallery.style.display = 'flex'
     about.style.display = 'none';
+     
     let output = ``;
                     for(let i = 0; i < length; i++) {
                         output += `
@@ -40,7 +42,7 @@ function currentPage(page,length) {
                             </a>
                             <figcaption itemprop="caption description">
                             <h2 class="lightbox-name"> ${page} Item # ${i+1}</h2> 
-                            <h3 class="lightbox-price"> Price: ${Math.floor(Math.random()*100)} pesos </h3>
+                            <h3 class="lightbox-price"> Price: ${randomInteger(min, max)} pesos </h3>
                             
                             </figcaption>
                     </figure>`
@@ -56,15 +58,15 @@ function currentPage(page,length) {
                             link.addEventListener('click', (e)=> {
                                 const page = e.target.textContent;
                                 if(page ==='Perfume') {                   
-                                    currentPage(page, 25)
+                                    currentPage(page, 25, 99, 130)
                                 } else if (page ==='Jeans') {
-                                    currentPage(page, 6)
+                                    currentPage(page, 6, 299, 399)
                                 } else if (page ==='T-Shirt') {
-                                    currentPage(page ,10)
+                                    currentPage(page ,10, 299, 350)
                                 } else if (page ==='Underwear') {
-                                    currentPage(page, 6)
+                                    currentPage(page, 6, 99, 120)
                                 } else if (page ==='Wax') {
-                                    currentPage(page,6)
+                                    currentPage(page,6, 99, 130)
                                 } else if (page ==='Categories') {
                                     currentPage(page,5)
                                 } 
