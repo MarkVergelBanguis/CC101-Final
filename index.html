@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" href="/Logo.png">
+    <meta name="description" content="Bench/ Surigao City">
+    <meta name="description" content="World Class Brand">
+    <meta name="description" content="Mark Vergel B. Banguis">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="/dist/photoswipe.css"> 
@@ -45,7 +48,7 @@
         </div>
     </div>
 
-        <div class="row row-cols-2 row-cols-sm-3 row-cols-md-5 pt-5 my-gallery" id="galleryPictures">
+        <div class="row  row-cols-2 row-cols-sm-3 row-cols-md-4  row-cols-lg-5 pt-5 my-gallery" id="galleryPictures">
 
         </div>
 
@@ -63,7 +66,7 @@
                 <!-- Container that holds slides. 
                     PhotoSwipe keeps only 3 of them in the DOM to save memory.
                     Don't modify these 3 pswp__item elements, data is added later on. -->
-                <div class="pswp__container">
+                <div class="pswp__container" id="lightboxContainer">
                     <div class="pswp__item"></div>
                     <div class="pswp__item"></div>
                     <div class="pswp__item"></div>
@@ -81,9 +84,7 @@
                         <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
                         <button class="pswp__button pswp__button--share" title="Share"></button>
                         <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-        
-                        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-        
+ 
                         <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
                         <!-- element will get class pswp__preloader--active when preloader is running -->
                         <div class="pswp__preloader">
@@ -106,7 +107,7 @@
                     </button>
         
                     <div class="pswp__caption">
-                        <div class="pswp__caption__center"></div>
+                        <div class="pswp__caption__center" id="caption"></div>
                     </div>
         
                 </div>
@@ -116,7 +117,7 @@
         </div>
 
         <div class="jumbotron shadow mt-5 about jello-horizontal" id="about">
-            <h1 class="display-4 pb-3" >Bench/ </h1>
+            <h1 class="display-4 pb-3 text-danger" >Bench/ </h1>
             <p>Located in: Metro Surigao Shoping Center Inc.
             </p>
             <p class="lead">Address: Metro Surigao Mall, Rizal Street, Surigao City, Surigao Del Norte</p>

@@ -330,13 +330,6 @@ var _options = {
 	isClickableElement: function(el) {
         return el.tagName === 'A';
     },
-    getDoubleTapZoom: function(isMouseClick, item) {
-    	if(isMouseClick) {
-    		return 1;
-    	} else {
-    		return item.initialZoomLevel < 0.7 ? 1 : 1.33;
-    	}
-    },
     maxSpreadZoom: 1.33,
 	modal: true,
 
