@@ -204,6 +204,22 @@ body {
   display: flex;
   align-items: center;
 }
+.cart {
+  font-size: 2rem;
+  transition: all .3s ease-in-out;
+  text-align: center;
+}
+
+#caption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart:hover {
+color: #f78a25;
+cursor: pointer;
+}
+
 .bench-category  a {
 text-decoration: none;
 font-size: 2rem;

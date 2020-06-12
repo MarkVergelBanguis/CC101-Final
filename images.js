@@ -40,11 +40,15 @@ function currentPage(page,length, min, max) {
                             <a href="/Images/${page}/${i}.jpg" itemprop="contentUrl" data-size="800x700"  >
                                 <img src="/Images/${page}/${i}.jpg" itemprop="thumbnail" alt="${page}" class="col m12 s12 shadow p-2 mb-5 bg-secondary rounded my-images"/>
                             </a>
-                            <figcaption itemprop="caption description">
-                            <h2 class="lightbox-name"> ${page} Item # ${i+1}</h2> 
-                            <h3 class="lightbox-price"> Price: ${randomInteger(min, max)} pesos </h3>
                             
+                            <figcaption itemprop="caption description" class="holder">
+                            <div> 
+                            <h2 class="lightbox-name"> ${page} Item # ${i+1}</h2> 
+                            <h3 class="lightbox-price"> Price: ${randomInteger(min, max)} pesos </h3>  
+                            </div>
+                            <div class="addCart"> <i class="fa fa-cart-arrow-down cart"></i> </div>
                             </figcaption>
+
                     </figure>`
                     }
         return gallery.innerHTML = output;
