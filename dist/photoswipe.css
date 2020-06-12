@@ -293,6 +293,10 @@ img {
   }
 }
 
+::selection {
+  color: #6e6f70;
+}
+
 
 
 
