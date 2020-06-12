@@ -24,9 +24,9 @@
         <div class="loader-section section-right"></div>
     </div>
 
-<div class="container fluid">
-    <div class="row text-center p-3 bg-white shadow mt-3">
-        <div class="col-12 "><h1 class="text-danger bench">Bench/</h1></div>
+<div class="container-xl">
+    <div class="row text-center p-3 bg-danger mt-5 shadow rounded header">
+        <div class="col-12"><h1 class="text-white bench mt-2">Bench/</h1></div>
     </div>
 
     <div class="row row-cols-md-3  text-center align-middle bench-category pt-3 parent">
@@ -117,7 +117,7 @@
         </div>
 
         <div class="jumbotron shadow mt-5 about jello-horizontal" id="about">
-            <h1 class="display-4 pb-3 text-danger" >Bench/ </h1>
+            <h1 class="display-4 pb-3 bg-danger text-white d-inline-block p-3">Bench/ </h1>
             <p>Located in: Metro Surigao Shoping Center Inc.
             </p>
             <p class="lead">Address: Metro Surigao Mall, Rizal Street, Surigao City, Surigao Del Norte</p>
@@ -137,7 +137,7 @@
                     As it sliced through demographic divisions -- age, gender, socio-economic status -- a stirring slogan, “BENCH/ is forever”, became the company’s abiding creed.</p></div>   
         </div>
 </div>
-
+<p class="text-center text-secondary">Mark Vergel Banguis </p>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -151,6 +151,40 @@
 <script src="/dist/photoswipe-ui-default.min.js"></script> 
 <script src="/lightbox.js"></script>
 <script src="/images.js"></script>
+<script>
+    var isNS = (navigator.appName == "Netscape") ? 1 : 0;
 
+if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+
+function mischandler(){
+return false;
+}
+
+function mousehandler(e){
+var myevent = (isNS) ? e : event;
+var eventbutton = (isNS) ? myevent.which : myevent.button;
+if((eventbutton==2)||(eventbutton==3)) return false;
+}
+document.oncontextmenu = mischandler;
+document.onmousedown = mousehandler;
+document.onmouseup = mousehandler;
+var isCtrl = false;
+document.onkeyup=function(e)
+{
+if(e.which == 17)
+isCtrl=false;
+}
+
+document.onkeydown=function(e)
+{
+if(e.which == 17)
+isCtrl=true;
+if(((e.which == 85) || (e.which == 117) || (e.which == 65) || (e.which == 97) || (e.which == 67) || (e.which == 99)) && isCtrl == true)
+{
+// alert(‘Keyboard shortcuts are cool!’);
+return false;
+}
+}
+</script>
 </body>
 </html>

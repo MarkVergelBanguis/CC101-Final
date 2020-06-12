@@ -231,7 +231,11 @@ img {
   .bench-category  a {
       font-size: 1.5rem;
      }
-
+     .header {
+      margin-top: 0 !important;
+      border-radius: 0 !important;
+    }
+  
 }
 @media only screen and (max-width: 500px) {
   .my-images {
@@ -259,6 +263,7 @@ img {
    .lightbox-price {
       font-size: 1rem;
    }
+
 }
 @media only screen and (max-width: 400px) {
   .my-images {
@@ -274,6 +279,17 @@ img {
 @media only screen and (max-width: 300px) {
   .my-images {
       height: 8rem !important;
+  }
+  .header {
+    height: 3.5rem;
+  }
+  .bench {
+    margin-top: -.4rem !important;
+    padding: .5rem !important;
+  }
+
+  .parent a {
+    font-size: 1rem !important;
   }
 }
 
@@ -322,7 +338,7 @@ img {
   height:150px;
   margin:-75px 0 0 -75px;
   border:3px solid transparent;
-  border-top-color:white;
+  border-top-color:#45d364;
   border-radius:100%;
   -webkit-animation: spin 2s linear infinite;
           animation: spin 2s linear infinite;
@@ -349,7 +365,7 @@ img {
   right:12px;
   bottom:12px;
   border:3px solid transparent;
-  border-top-color:orange;
+  border-top-color:#ff0000;
   border-radius:100%;
   -webkit-animation: spin 1.5s linear infinite;
           animation: spin 1.5s linear infinite;

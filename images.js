@@ -11,7 +11,7 @@ window.addEventListener('load',function(){
                       for(let i = 0; i < 5; i++) {
                                       output += `
                                    <div class="col m5ths s6 box-images"> 
-                                   <img src="/Images/Products/${i}.jpg" itemprop="thumbnail" alt="Image description" class="col m12 s12 shadow p-3 mb-5 bg-secondary rounded my-images"/>
+                                   <img src="/Images/Products/${i}.jpg" itemprop="thumbnail" alt="Categories" class="col m12 s12 shadow p-2 mb-5 bg-secondary rounded my-images"/>
                                    </div>
                                       `                       
       }
@@ -38,7 +38,7 @@ function currentPage(page,length, min, max) {
                         output += `
                         <figure itemprop="associatedMedia" class="col m5ths s6 box-images">
                             <a href="/Images/${page}/${i}.jpg" itemprop="contentUrl" data-size="800x700"  >
-                                <img src="/Images/${page}/${i}.jpg" itemprop="thumbnail" alt="Image description" class="col m12 s12 shadow p-3 mb-5 bg-secondary rounded my-images"/>
+                                <img src="/Images/${page}/${i}.jpg" itemprop="thumbnail" alt="${page}" class="col m12 s12 shadow p-2 mb-5 bg-secondary rounded my-images"/>
                             </a>
                             <figcaption itemprop="caption description">
                             <h2 class="lightbox-name"> ${page} Item # ${i+1}</h2> 
@@ -60,9 +60,9 @@ function currentPage(page,length, min, max) {
                                 if(page ==='Perfume') {                   
                                     currentPage(page, 25, 99, 130)
                                 } else if (page ==='Jeans') {
-                                    currentPage(page, 6, 299, 399)
+                                    currentPage(page, 7, 299, 399)
                                 } else if (page ==='T-Shirt') {
-                                    currentPage(page ,10, 299, 350)
+                                    currentPage(page ,11, 489, 499)
                                 } else if (page ==='Underwear') {
                                     currentPage(page, 6, 99, 120)
                                 } else if (page ==='Wax') {
@@ -79,10 +79,3 @@ function currentPage(page,length, min, max) {
 
 
 
-
-     /*    <figure itemprop="associatedMedia" class="col m5ths s6 box-images">
-                <a href="/Images/Perfume/${i}.jpg" itemprop="contentUrl" data-size="800x700"  >
-                    <img src="/Images/Perfume/${i}.jpg" itemprop="thumbnail" alt="Image description" class="col m12 s12 shadow p-3 mb-5 bg-secondary rounded my-images"/>
-                </a>
-                <figcaption itemprop="caption description">${i}</figcaption>
-            </figure> */ 
