@@ -55,7 +55,7 @@ function currentPage(page,length, min, max) {
                             <h2 class="lightbox-name"> ${page} Item # ${i+1}</h2> 
                             <h3 class="lightbox-price"> Price: ${randomInteger(min, max)} pesos </h3>  
                             </div>
-                            <div class="addCart"> <i class="fa fa-cart-arrow-down cart"  id="alertbox"></i> </div>
+                            <div class="addCart"> <i class="fa fa-cart-arrow-down cart"></i> </div>
                             </figcaption>
 
                     </figure>`
