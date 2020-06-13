@@ -1,9 +1,10 @@
+
 const gallery = document.querySelector('#galleryPictures'),
       aboutPage = document.querySelector('#about'),    
       aboutButton = document.querySelector('.aboutButton');
+
+
 let links = document.querySelectorAll('.cuteness'); 
-
-
 
 window.addEventListener('load',function(){
     document.querySelector('body').classList.add("loaded")  
@@ -27,12 +28,20 @@ gallery.style.display = 'none';
 function randomInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+document.body.addEventListener('click', (e)=> {
+    if(e.target.classList.contains('cart')) {
+        alert("Added")
+    }
+})
+
 function currentPage(page,length, min, max) {
     let current = document.querySelector('#dropdownMenuLink');
     current.textContent = page;
     gallery.style.display = 'flex'
     about.style.display = 'none';
-     
+   
+
     let output = ``;
                     for(let i = 0; i < length; i++) {
                         output += `
@@ -46,7 +55,7 @@ function currentPage(page,length, min, max) {
                             <h2 class="lightbox-name"> ${page} Item # ${i+1}</h2> 
                             <h3 class="lightbox-price"> Price: ${randomInteger(min, max)} pesos </h3>  
                             </div>
-                            <div class="addCart"> <i class="fa fa-cart-arrow-down cart"></i> </div>
+                            <div class="addCart"> <i class="fa fa-cart-arrow-down cart"  id="alertbox"></i> </div>
                             </figcaption>
 
                     </figure>`
